@@ -1,3 +1,4 @@
+gpu_set_texfilter(false)
 global.som_ativo = true;
 global.volume = 0.6
 global.fullscreen = false

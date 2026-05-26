@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"OCamera",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"OBotaoVoltarHelp",
+  "eventList":[],
   "managed":true,
-  "name":"OCamera",
+  "name":"OBotaoVoltarHelp",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"TelaHelp",
+    "path":"folders/Objetos/TelaHelp.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"SBotaoVoltarHelp",
+    "path":"sprites/SBotaoVoltarHelp/SBotaoVoltarHelp.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

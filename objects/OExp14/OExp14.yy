@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"OCamera",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"OExp14",
+  "eventList":[],
   "managed":true,
-  "name":"OCamera",
+  "name":"OExp14",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Explicacoes",
+    "path":"folders/Objetos/TelaHelp/Explicacoes.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"SExp14",
+    "path":"sprites/SExp14/SExp14.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
