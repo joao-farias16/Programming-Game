@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"OBotaoModoDesafio",
+  "%Name":"OBotaoVoltarDesafioBloqueado",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"OBotaoModoDesafio",
+  "name":"OBotaoVoltarDesafioBloqueado",
   "overriddenProperties":[],
   "parent":{
-    "name":"TelaInicial",
-    "path":"folders/Objetos/TelaInicial.yy",
+    "name":"TelaDesafio",
+    "path":"folders/Objetos/TelaDesafio.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SBotaoModoDesafio",
-    "path":"sprites/SBotaoModoDesafio/SBotaoModoDesafio.yy",
+    "name":"SBotaoVoltarDesafioBloqueado",
+    "path":"sprites/SBotaoVoltarDesafioBloqueado/SBotaoVoltarDesafioBloqueado.yy",
   },
   "spriteMaskId":null,
   "visible":true,
