@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"OIconeNivel1",
+  "%Name":"SBotaoVoltarSelesaoNiveis",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"OIconeNivel1",
+  "name":"SBotaoVoltarSelesaoNiveis",
   "overriddenProperties":[],
   "parent":{
-    "name":"IconesFases",
-    "path":"folders/Objetos/TelaNiveis/IconesFases.yy",
+    "name":"Objetos",
+    "path":"folders/Sprites/TelaNivel1/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SIconeNivel1",
-    "path":"sprites/SIconeNivel1/SIconeNivel1.yy",
+    "name":"BotaoVoltarSelecaoNiveis",
+    "path":"sprites/BotaoVoltarSelecaoNiveis/BotaoVoltarSelecaoNiveis.yy",
   },
   "spriteMaskId":null,
   "visible":true,
