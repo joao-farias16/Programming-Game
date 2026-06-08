@@ -24,8 +24,8 @@ draw_set_valign(fa_top);
 // 📐 AJUSTE DA ALTURA DA DIGITAÇÃO:
 // Mude o "- 5" para valores menores (como -10, -15) se o texto ainda precisar SUBIR mais.
 // Mude para números maiores (como +0, +5) se ele precisar DESCER.
-var digitacao_x = x + 12;
-var digitacao_y = y + 3;
+var digitacao_x = x + 27;
+var digitacao_y = y + 1;
 
 draw_text(digitacao_x, digitacao_y, texto_digitado);
 

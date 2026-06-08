@@ -17,7 +17,6 @@ if (instance_exists(AreaResposta) && AreaResposta.estado_atual == ESTADO_FASE.AC
     draw_set_color(c_white);
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
-    draw_text(centro_botao_x, centro_botao_y, "Executar Código");
 }
 
 // Reseta o alinhamento padrão do GameMaker
