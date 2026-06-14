@@ -1,4 +1,5 @@
-// Calcula o centro exato do botão usando suas dimensões atuais
+draw_self()
+/*// Calcula o centro exato do botão usando suas dimensões atuais
 var centro_botao_x = x + (sprite_width / 2);
 var centro_botao_y = y + (sprite_height / 2);
 
@@ -22,3 +23,4 @@ if (instance_exists(AreaResposta) && AreaResposta.estado_atual == ESTADO_FASE.AC
 // Reseta o alinhamento padrão do GameMaker
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
+*/

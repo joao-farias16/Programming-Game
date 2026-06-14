@@ -1,35 +1,38 @@
 if (instance_exists(SAreaResposta)) {
     
-    // Se o jogador já acertou e o botão virou "Continuar", ele avança de fase
+    // Se o jogador já acertou e clicar novamente,
+    // avança para a tela de níveis
     if (SAreaResposta.estado_atual == ESTADO_FASE.ACERTO) {
-       with OTransicao {
-		indo = true
-		proxima_sala = TelaNiveis
-}
+		
+		with OTransicao {
+			indo = true
+			proxima_sala = TelaNiveis
+		}
+		
     } 
     // Se ainda está testando o código:
     else {
-        var comando = string_trim(SAreaResposta.texto_digitado);
         
+        var comando = string_trim(SAreaResposta.texto_digitado)
+        
+        // Resposta correta
         if (string_lower(comando) == "print") {
-            SAreaResposta.estado_atual = ESTADO_FASE.ACERTO;
-            SAreaResposta.texto_resultado = "A mensagem apareceu na tela!";
-            SAreaResposta.texto_conceito = "Conceito: print() exibe informações no terminal.";
+            
+            SAreaResposta.estado_atual = ESTADO_FASE.ACERTO
+            
         } 
         else {
-            // Se errou:
-            SAreaResposta.estado_atual = ESTADO_FASE.ERRO;
-            SAreaResposta.texto_resultado = "Código incorreto.";
             
-            // ⏰ ATIVAR OS ALARMES DE 7 SEGUNDOS:
+            // Resposta incorreta
+            SAreaResposta.estado_atual = ESTADO_FASE.ERRO
             
-            // Ativa o alarme 0 do objeto de imagem para mudar o sprite de volta
+            // Faz a imagem voltar para o estado neutro
             if (instance_exists(Neutro)) {
-                Neutro.alarm[0] = 1 * game_get_speed(gamespeed_fps);
+                Neutro.alarm[0] = 1 * game_get_speed(gamespeed_fps)
             }
             
-            // Ativa o alarme 0 da AreaResposta para limpar as mensagens da tela
-            SAreaResposta.alarm[0] = 1 * game_get_speed(gamespeed_fps);
+            // Limpa a área de resposta após um tempo
+            SAreaResposta.alarm[0] = 1 * game_get_speed(gamespeed_fps)
         } 
     } 
-} 
+}

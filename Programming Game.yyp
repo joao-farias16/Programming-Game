@@ -136,6 +136,7 @@
     {"id":{"name":"SBotaoHelp","path":"sprites/SBotaoHelp/SBotaoHelp.yy",},},
     {"id":{"name":"SBotaoModoDesafio","path":"sprites/SBotaoModoDesafio/SBotaoModoDesafio.yy",},},
     {"id":{"name":"SBotaoPlay","path":"sprites/SBotaoPlay/SBotaoPlay.yy",},},
+    {"id":{"name":"SBotaoProximaFase","path":"sprites/SBotaoProximaFase/SBotaoProximaFase.yy",},},
     {"id":{"name":"SBotaoResetar","path":"sprites/SBotaoResetar/SBotaoResetar.yy",},},
     {"id":{"name":"SBotaoSettings","path":"sprites/SBotaoSettings/SBotaoSettings.yy",},},
     {"id":{"name":"SBotaoVoltarDesafioBloqueado","path":"sprites/SBotaoVoltarDesafioBloqueado/SBotaoVoltarDesafioBloqueado.yy",},},

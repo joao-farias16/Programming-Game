@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"TelaNivelFundo",
   "bboxMode":0,
-  "bbox_bottom":1091,
+  "bbox_bottom":1079,
   "bbox_left":0,
   "bbox_right":1919,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"831c7adc-cff5-4fce-ab68-85bc546182e3","name":"831c7adc-cff5-4fce-ab68-85bc546182e3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e21ebb06-a1b5-43d3-bccb-dc5d0f4ce698","name":"e21ebb06-a1b5-43d3-bccb-dc5d0f4ce698","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":1092,
+  "height":1080,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"6cee1b29-5fa7-46e0-aead-54a4f346ea30","blendMode":0,"displayName":"default","isLocked":false,"name":"6cee1b29-5fa7-46e0-aead-54a4f346ea30","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"2ad35e31-c86c-4b46-9271-4cce6cdcf9b2","blendMode":0,"displayName":"default","isLocked":false,"name":"2ad35e31-c86c-4b46-9271-4cce6cdcf9b2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"TelaNivelFundo",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"831c7adc-cff5-4fce-ab68-85bc546182e3","path":"sprites/TelaNivelFundo/TelaNivelFundo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"35456b16-7e12-4f84-abe1-4ada1c184645","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e21ebb06-a1b5-43d3-bccb-dc5d0f4ce698","path":"sprites/TelaNivelFundo/TelaNivelFundo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"877d4f25-0cf9-4aae-a9f1-f57de627dffc","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
