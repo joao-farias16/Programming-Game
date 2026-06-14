@@ -3,10 +3,12 @@ if (instance_exists(SAreaResposta)) {
     // Se o jogador já acertou e clicar novamente,
     // avança para a tela de níveis
     if (SAreaResposta.estado_atual == ESTADO_FASE.ACERTO) {
+		global.fase1_concluida = true
+		global.fase2_desbloqueada = true
 		
 		with OTransicao {
 			indo = true
-			proxima_sala = TelaNiveis
+			proxima_sala = Nivel2
 		}
 		
     } 

@@ -42,6 +42,7 @@
     {"name":"inst_75A5212F","path":"rooms/TelaNiveis/TelaNiveis.yy",},
     {"name":"inst_7103FEF4","path":"rooms/TelaNiveis/TelaNiveis.yy",},
     {"name":"inst_3E74BFE8","path":"rooms/TelaNiveis/TelaNiveis.yy",},
+    {"name":"inst_6B658CE9","path":"rooms/TelaNiveis/TelaNiveis.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -82,6 +83,7 @@
         {"$GMRInstance":"v4","%Name":"inst_75A5212F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_75A5212F","objectId":{"name":"OIconeNivel30","path":"objects/OIconeNivel30/OIconeNivel30.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":661.0,"y":1846.0,},
         {"$GMRInstance":"v4","%Name":"inst_7103FEF4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7103FEF4","objectId":{"name":"OIconeNivel31","path":"objects/OIconeNivel31/OIconeNivel31.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":782.0,"y":1846.0,},
         {"$GMRInstance":"v4","%Name":"inst_3E74BFE8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E74BFE8","objectId":{"name":"OIconeNivel32","path":"objects/OIconeNivel32/OIconeNivel32.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":903.0,"y":1846.0,},
+        {"$GMRInstance":"v4","%Name":"inst_6B658CE9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6B658CE9","objectId":{"name":"OBarraProgresso","path":"objects/OBarraProgresso/OBarraProgresso.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":624.0,"y":72.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"STelaNiveis","path":"sprites/STelaNiveis/STelaNiveis.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
