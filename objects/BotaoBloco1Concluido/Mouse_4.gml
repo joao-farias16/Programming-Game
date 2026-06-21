@@ -1,4 +1,4 @@
 with OTransicao {
 			indo = true
-			proxima_sala = nivel4
+			proxima_sala = Nivel4
 		}
