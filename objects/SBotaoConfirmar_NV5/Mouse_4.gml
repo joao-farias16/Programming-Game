@@ -1,32 +1,32 @@
-if (instance_exists(SAreaResposta_NV4)) {
+if (instance_exists(SAreaResposta_NV5)) {
     
     // Se o jogador já acertou e clicar novamente,
     // avança para a tela de níveis
-    if (SAreaResposta_NV4.estado_atual == ESTADO_FASE.ACERTO) {
-		global.fase4_concluida = true
-		global.fase5_desbloqueada = true
+    if (SAreaResposta_NV5.estado_atual == ESTADO_FASE.ACERTO) {
+		global.fase5_concluida = true
+		global.fase6_desbloqueada = true
 		
 		with OTransicao {
 			indo = true
-			proxima_sala = Nivel5
+			proxima_sala = TelaNiveis
 		}
 		
     } 
     // Se ainda está testando o código:
     else {
         
-        var comando = string_trim(SAreaResposta_NV4.texto_digitado)
+        var comando = string_trim(SAreaResposta_NV5.texto_digitado)
         
         // Resposta correta
-        if (string_lower(comando) == "+") {
+        if (string_lower(comando) == "%") {
             
-            SAreaResposta_NV4.estado_atual = ESTADO_FASE.ACERTO
+            SAreaResposta_NV5.estado_atual = ESTADO_FASE.ACERTO
             
         } 
         else {
             
             // Resposta incorreta
-            SAreaResposta_NV4.estado_atual = ESTADO_FASE.ERRO
+            SAreaResposta_NV5.estado_atual = ESTADO_FASE.ERRO
             
             // Faz a imagem voltar para o estado neutro
             if (instance_exists(Neutro)) {
@@ -34,7 +34,7 @@ if (instance_exists(SAreaResposta_NV4)) {
             }
             
             // Limpa a área de resposta após um tempo
-            SAreaResposta_NV4.alarm[0] = 1 * game_get_speed(gamespeed_fps)
+            SAreaResposta_NV5.alarm[0] = 1 * game_get_speed(gamespeed_fps)
         } 
     } 
 }

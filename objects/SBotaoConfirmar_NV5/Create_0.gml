@@ -9,5 +9,3 @@ sprite_alvo = BotaoConfirmar
 
 // Controla se uma transição está acontecendo
 trocando = false
-
-area_resposta_id = noone;

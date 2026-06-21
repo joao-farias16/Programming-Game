@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"SAreaResposta_NV4",
+  "%Name":"SAreaResposta_NV5",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,11 +8,11 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"SAreaResposta_NV4",
+  "name":"SAreaResposta_NV5",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
-    "path":"folders/Sprites/TelaNivel4/Objetos.yy",
+    "path":"folders/Sprites/TelaNivel5/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
