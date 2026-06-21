@@ -1,32 +1,32 @@
-if (instance_exists(OAreaRespostaNivel2)) {
+if (instance_exists(SAreaResposta_NV3)) {
     
     // Se o jogador já acertou e clicar novamente,
     // avança para a tela de níveis
-    if (OAreaRespostaNivel2.estado_atual == ESTADO_FASE.ACERTO) {
-		global.fase2_concluida = true
-		global.fase3_desbloqueada = true
+    if (SAreaResposta_NV3.estado_atual == ESTADO_FASE.ACERTO) {
+		global.fase3_concluida = true
+		global.fase4_desbloqueada = true
 		
 		with OTransicao {
 			indo = true
-			proxima_sala = Nivel3
+			proxima_sala = TelaNiveis
 		}
 		
     } 
     // Se ainda está testando o código:
     else {
         
-        var comando = string_trim(OAreaRespostaNivel2.texto_digitado)
+        var comando = string_trim(SAreaResposta_NV3.texto_digitado)
         
         // Resposta correta
-        if (string_lower(comando) == "print(\"ola mundo\")") {
+        if (string_lower(comando) == "#") {
             
-            OAreaRespostaNivel2.estado_atual = ESTADO_FASE.ACERTO
+            SAreaResposta_NV3.estado_atual = ESTADO_FASE.ACERTO
             
         } 
         else {
             
             // Resposta incorreta
-            OAreaRespostaNivel2.estado_atual = ESTADO_FASE.ERRO
+            SAreaResposta_NV3.estado_atual = ESTADO_FASE.ERRO
             
             // Faz a imagem voltar para o estado neutro
             if (instance_exists(Neutro)) {
@@ -34,7 +34,7 @@ if (instance_exists(OAreaRespostaNivel2)) {
             }
             
             // Limpa a área de resposta após um tempo
-            OAreaRespostaNivel2.alarm[0] = 1 * game_get_speed(gamespeed_fps)
+            SAreaResposta_NV3.alarm[0] = 1 * game_get_speed(gamespeed_fps)
         } 
     } 
 }
