@@ -8,7 +8,7 @@ if (instance_exists(SAreaResposta_NV3)) {
 		
 		with OTransicao {
 			indo = true
-			proxima_sala = TelaNiveis
+			proxima_sala = Bloco1Concluido
 		}
 		
     } 

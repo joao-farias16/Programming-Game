@@ -8,7 +8,7 @@ var novo_sprite
 // o botão vira "Próxima Fase"
 if (instance_exists(SAreaResposta_NV3) && SAreaResposta_NV3.estado_atual == ESTADO_FASE.ACERTO) {
 
-	novo_sprite = SBotaoProximaFase
+	novo_sprite = BlocoConcluido
 
 }
 else {

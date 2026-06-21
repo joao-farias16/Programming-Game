@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"TelaNivel1",
-    "path":"folders/Sprites/TelaNivel1.yy",
+    "name":"Sprites Universais",
+    "path":"folders/Sprites/Sprites Universais.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
