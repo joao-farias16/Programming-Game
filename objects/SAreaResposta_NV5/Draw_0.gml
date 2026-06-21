@@ -9,7 +9,7 @@ draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
-var digitacao_x = x + 27;
+var digitacao_x = x + 43;
 var digitacao_y = y + 1;
 
 draw_text(digitacao_x, digitacao_y, texto_digitado);
