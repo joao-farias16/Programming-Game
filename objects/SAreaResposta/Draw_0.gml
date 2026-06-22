@@ -1,7 +1,7 @@
 draw_self();
 
-if (string_length(texto_digitado) > 8) {
-    texto_digitado = string_copy(texto_digitado, 1, 8);
+if (string_length(texto_digitado) > 5) {
+    texto_digitado = string_copy(texto_digitado, 1, 5);
     keyboard_string = texto_digitado;
 }
 

@@ -42,14 +42,14 @@ if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
         keyboard_clear(vk_return);
         var comando = string_trim(texto_digitado);
         if (estado_atual == ESTADO_FASE.ACERTO) {
-            global.fase5_concluida = true;
+            global.fase6_concluida = true;
             if (instance_exists(OTransicao)) {
                 with (OTransicao) {
                     indo = true;
-                    proxima_sala = Nivel6;
+                    proxima_sala = TelaNiveis;
                 }
             }
-        } else if (comando == "%") {
+        } else if (comando == ">") {
             estado_atual = ESTADO_FASE.ACERTO;
         } else {
             estado_atual = ESTADO_FASE.ERRO;

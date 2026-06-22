@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"OIconeNivel7",
+  "%Name":"Imagens_NV6",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":3,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"OIconeNivel7",
+  "name":"Imagens_NV6",
   "overriddenProperties":[],
   "parent":{
-    "name":"IconesFases",
-    "path":"folders/Objetos/TelaNiveis/IconesFases.yy",
+    "name":"Objetos",
+    "path":"folders/Sprites/TelaNivel6/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SIconeNivelBloqueado",
-    "path":"sprites/SIconeNivelBloqueado/SIconeNivelBloqueado.yy",
+    "name":"Neutro",
+    "path":"sprites/Neutro/Neutro.yy",
   },
   "spriteMaskId":null,
   "visible":true,
