@@ -46,7 +46,7 @@ if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
             if (instance_exists(OTransicao)) {
                 with (OTransicao) {
                     indo = true;
-                    proxima_sala = TelaNiveis;
+                    proxima_sala = Nivel7;
                 }
             }
         } else if (comando == ">") {
