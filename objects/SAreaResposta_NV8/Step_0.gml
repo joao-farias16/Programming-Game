@@ -67,7 +67,7 @@ if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
                 proxima_sala = Nivel9;
             }
         }
-    } else if (string_lower(comando) == "nome") {
+    } else if (string_lower(comando) == "nome = \"python\"") {
         estado_atual = ESTADO_FASE.ACERTO;
     } else {
         estado_atual = ESTADO_FASE.ERRO;

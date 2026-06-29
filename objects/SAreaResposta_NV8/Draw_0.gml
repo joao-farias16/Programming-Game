@@ -1,7 +1,7 @@
 draw_self();
 
-if (string_length(texto_digitado) > 4) {
-    texto_digitado = string_copy(texto_digitado, 1, 4);
+if (string_length(texto_digitado) > 15) {
+    texto_digitado = string_copy(texto_digitado, 1, 15);
     keyboard_string = texto_digitado;
 }
 
@@ -9,7 +9,7 @@ draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
-var digitacao_x = x + 30;
+var digitacao_x = x + 35;
 var digitacao_y = y + 1;
 
 draw_text(digitacao_x, digitacao_y, texto_digitado);

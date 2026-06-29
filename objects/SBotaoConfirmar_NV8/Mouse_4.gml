@@ -18,7 +18,7 @@ if (instance_exists(SAreaResposta_NV8)) {
         var comando = string_trim(SAreaResposta_NV8.texto_digitado)
         
         // Resposta correta
-        if (string_lower(comando) == "nome") {
+        if (string_lower(comando) == "nome = \"python\"") {
             
             SAreaResposta_NV8.estado_atual = ESTADO_FASE.ACERTO
             
