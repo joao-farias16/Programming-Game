@@ -1,12 +1,12 @@
-if (instance_exists(SAreaResposta_NV10)) {
+if (instance_exists(SAreaResposta_NV10) && instance_exists(SAreaResposta2NV10)) {
 
 	// Define qual sprite deve ser mostrado
 	var novo_sprite
 
-	if (SAreaResposta_NV10.estado_atual == ESTADO_FASE.ACERTO) {
+	if (SAreaResposta_NV10.estado_atual == ESTADO_FASE.ACERTO && SAreaResposta2NV10.estado_atual == ESTADO_FASE.ACERTO) {
 		novo_sprite = Correto
 	}
-	else if (SAreaResposta_NV10.estado_atual == ESTADO_FASE.ERRO) {
+	else if (SAreaResposta_NV10.estado_atual == ESTADO_FASE.ERRO && SAreaResposta2NV10.estado_atual == ESTADO_FASE.ERRO) {
 		novo_sprite = Errado
 	}
 	else {
