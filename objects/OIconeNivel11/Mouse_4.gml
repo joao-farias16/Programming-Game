@@ -1,6 +1,6 @@
 if global.fase11_desbloqueada {
 	with OTransicao {
 			indo = true
-			proxima_sala = TelaNiveis
+			proxima_sala = Nivel11
 	}
 }
