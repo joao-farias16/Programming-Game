@@ -12,3 +12,6 @@ texto_conceito = "";
 if (instance_exists(SBotaoConfirmar_NV19)) {
     SBotaoConfirmar_NV19.area_resposta_id = id;
 }
+
+max_caracteres_linha = 30; // quantidade máxima por linha
+max_linhas = 7;            // quantidade máxima de linhas

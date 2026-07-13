@@ -7,3 +7,5 @@ posicao_cursor = 0
 texto_resultado = "Aguardando código...";
 texto_conceito = "";
 posicao_cursor = 0; // posição do cursor no texto
+
+max_caracteres_linha = 1;

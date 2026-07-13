@@ -43,6 +43,24 @@ if (mouse_check_button_pressed(mb_left) && !position_meeting(mouse_x, mouse_y, i
 
 if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
     
+	var linhas = string_split(texto_digitado, "\n");
+
+	var restante = posicao_cursor;
+	var linha_cursor = 0;
+	var coluna_cursor = 0;
+
+	for (var i = 0; i < array_length(linhas); i++) {
+		var tam = string_length(linhas[i]);
+
+		if (restante <= tam) {
+        linha_cursor = i;
+        coluna_cursor = restante;
+        break;
+		}
+
+		restante -= (tam + 1);
+	}
+	
     // Mover cursor com setas
     if (keyboard_check_pressed(vk_left)) {
         posicao_cursor = max(0, posicao_cursor - 1);
@@ -56,9 +74,13 @@ if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
     if (string_length(texto_novo) > string_length(texto_digitado)) {
         // Inserir letra na posição do cursor
         var letra = string_char_at(texto_novo, string_length(texto_novo));
-        texto_digitado = string_insert(letra, texto_digitado, posicao_cursor + 1);
-        posicao_cursor++;
-        keyboard_string = texto_digitado;
+        if (string_length(linhas[linha_cursor]) < max_caracteres_linha) {
+			texto_digitado = string_insert(letra, texto_digitado, posicao_cursor + 1);
+			posicao_cursor++;
+			keyboard_string = texto_digitado;
+		} else {
+			keyboard_string = texto_digitado;
+		}
         
     } else if (string_length(texto_novo) < string_length(texto_digitado)) {
         // Backspace apaga na posição do cursor
@@ -73,10 +95,13 @@ if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
     
     // Enter insere quebra de linha
     if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_return)) {
-        keyboard_clear(vk_enter);
-        keyboard_clear(vk_return);
-        texto_digitado = string_insert("\n", texto_digitado, posicao_cursor + 1);
-        posicao_cursor++;
-        keyboard_string = texto_digitado;
-    }
+		keyboard_clear(vk_enter);
+		keyboard_clear(vk_return);
+	
+		if (array_length(linhas) < max_linhas) {
+			texto_digitado = string_insert("\n", texto_digitado, posicao_cursor + 1);
+			posicao_cursor++;
+			keyboard_string = texto_digitado;
+		}
+	}
 }

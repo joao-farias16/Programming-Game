@@ -12,3 +12,5 @@ texto_conceito = "";
 if (instance_exists(SBotaoConfirmar_NV9)) {
     SBotaoConfirmar_NV9.area_resposta_id = id;
 }
+
+max_caracteres_linha = 3;

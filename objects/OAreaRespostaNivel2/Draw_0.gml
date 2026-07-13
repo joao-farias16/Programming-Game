@@ -1,10 +1,5 @@
 draw_self();
 
-if (string_length(texto_digitado) > 18) {
-    texto_digitado = string_copy(texto_digitado, 1, 18);
-    keyboard_string = texto_digitado;
-}
-
 draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);

@@ -40,12 +40,17 @@ else if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
         posicao_cursor = min(string_length(texto_digitado), posicao_cursor + 1);
     }
     var texto_novo = keyboard_string;
-    if (string_length(texto_novo) > string_length(texto_digitado)) {
-        var letra = string_char_at(texto_novo, string_length(texto_novo));
-        texto_digitado = string_insert(letra, texto_digitado, posicao_cursor + 1);
-        posicao_cursor++;
-        keyboard_string = texto_digitado;
-    } else if (string_length(texto_novo) < string_length(texto_digitado)) {
+		if (string_length(texto_novo) > string_length(texto_digitado)) {
+
+		if (string_length(texto_digitado) < max_caracteres_linha) {
+			var letra = string_char_at(texto_novo, string_length(texto_novo));
+			texto_digitado = string_insert(letra, texto_digitado, posicao_cursor + 1);
+			posicao_cursor++;
+		}
+
+		keyboard_string = texto_digitado;
+	}
+    else if (string_length(texto_novo) < string_length(texto_digitado)) {
         if (posicao_cursor > 0) {
             texto_digitado = string_delete(texto_digitado, posicao_cursor, 1);
             posicao_cursor--;
