@@ -13,3 +13,5 @@ posicao_cursor = 0; // posição do cursor no texto
 // Textos de feedback
 texto_resultado = "Aguardando código...";
 texto_conceito = "";
+
+max_caracteres_linha = 5;
