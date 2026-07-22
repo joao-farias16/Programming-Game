@@ -1,35 +1,34 @@
-if (instance_exists(SAreaResposta_NV26)) {
+if (instance_exists(SAreaResposta_NV32)) {
     
     // Se o jogador já acertou e clicar novamente,
     // avança para a tela de níveis
-    if (SAreaResposta_NV26.estado_atual == ESTADO_FASE.ACERTO) {
-        global.fase26_concluida = true;
-        global.fase27_desbloqueada = true;
+    if (SAreaResposta_NV32.estado_atual == ESTADO_FASE.ACERTO) {
+        global.fase32_concluida = true;
         
         with (OTransicao) {
             indo = true;
-            proxima_sala = Nivel27;
+            proxima_sala = Parabens;
         }
         
     } 
     // Se ainda está testando o código:
     else {
         
-        var comando = scr_normalizar_codigo(SAreaResposta_NV26.texto_digitado);
+        var comando = scr_normalizar_codigo(SAreaResposta_NV32.texto_digitado);
         
         // Respostas aceitas (variações válidas do código corrigido)
-        var resposta_1 = scr_normalizar_codigo("if true:\nprint(\"ola\")");
+        var resposta_1 = scr_normalizar_codigo("numeros = [1, 2, 3, 4, 5]\nsoma = 0\nfor n in numeros:\nif n % 2 == 0:\nsoma += n\nprint(\"soma dos pares: \" + str(soma))");
         
         // Resposta correta
         if (comando == resposta_1) {
             
-            SAreaResposta_NV26.estado_atual = ESTADO_FASE.ACERTO;
+            SAreaResposta_NV32.estado_atual = ESTADO_FASE.ACERTO;
             
         } 
         else {
             
             // Resposta incorreta
-            SAreaResposta_NV26.estado_atual = ESTADO_FASE.ERRO;
+            SAreaResposta_NV32.estado_atual = ESTADO_FASE.ERRO;
             
             // Faz a imagem voltar para o estado neutro
             if (instance_exists(Neutro)) {
@@ -37,7 +36,7 @@ if (instance_exists(SAreaResposta_NV26)) {
             }
             
             // Limpa a área de resposta após um tempo
-            SAreaResposta_NV26.alarm[0] = 1 * game_get_speed(gamespeed_fps);
+            SAreaResposta_NV32.alarm[0] = 1 * game_get_speed(gamespeed_fps);
         } 
     } 
 }
