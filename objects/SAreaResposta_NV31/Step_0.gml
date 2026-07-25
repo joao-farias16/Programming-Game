@@ -64,7 +64,7 @@ else if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
         keyboard_clear(vk_return);
         var comando = string_lower(string_trim(texto_digitado));
         
-        if (comando == "len") {
+        if (comando == "in") {
             estado_atual = ESTADO_FASE.ACERTO;
         } else {
             estado_atual = ESTADO_FASE.ERRO;

@@ -4,6 +4,7 @@ if (instance_exists(SAreaResposta_NV32)) {
     // avança para a tela de níveis
     if (SAreaResposta_NV32.estado_atual == ESTADO_FASE.ACERTO) {
         global.fase32_concluida = true;
+		global.niveis_completos++
         
         with (OTransicao) {
             indo = true;

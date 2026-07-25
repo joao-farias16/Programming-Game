@@ -5,6 +5,7 @@ if (instance_exists(SAreaResposta_NV27)) {
     if (SAreaResposta_NV27.estado_atual == ESTADO_FASE.ACERTO) {
         global.fase27_concluida = true;
         global.fase28_desbloqueada = true;
+		global.niveis_completos++
         
         with (OTransicao) {
             indo = true;

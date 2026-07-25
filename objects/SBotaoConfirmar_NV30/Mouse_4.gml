@@ -5,6 +5,7 @@ if (instance_exists(SAreaResposta_NV30) && instance_exists(SAreaResposta2NV30)) 
     if (SAreaResposta_NV30.estado_atual == ESTADO_FASE.ACERTO && SAreaResposta2NV30.estado_atual == ESTADO_FASE.ACERTO) {
 		global.fase30_concluida = true
 		global.fase31_desbloqueada = true
+		global.niveis_completos++
 		
 		with OTransicao {
 			indo = true

@@ -5,6 +5,7 @@ if (instance_exists(SAreaResposta_NV15)) {
     if (SAreaResposta_NV15.estado_atual == ESTADO_FASE.ACERTO) {
 		global.fase15_concluida = true
 		global.fase16_desbloqueada = true
+		global.niveis_completos++
 		
 		with OTransicao {
 			indo = true

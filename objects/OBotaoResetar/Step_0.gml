@@ -96,6 +96,8 @@ if (mouse_check_button_pressed(mb_left)) {
 		global.fase30_concluida = false
 		global.fase31_concluida = false
 		global.fase32_concluida = false
+		
+		global.niveis_completos = 0
     }
 }
 

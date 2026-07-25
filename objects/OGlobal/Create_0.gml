@@ -84,3 +84,5 @@ global.fase29_concluida = false
 global.fase30_concluida = false
 global.fase31_concluida = false
 global.fase32_concluida = false
+
+global.niveis_completos = 0
