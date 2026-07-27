@@ -1,4 +1,4 @@
-if global.desafio1_concluido {
+if global.desafio8_concluido {
 	sprite_index = SDesafio8Concluido
 }
 else{

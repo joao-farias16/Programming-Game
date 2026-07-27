@@ -49,7 +49,7 @@ global.fase28_desbloqueada = false
 global.fase29_desbloqueada = false
 global.fase30_desbloqueada = false
 global.fase31_desbloqueada = false
-global.fase32_desbloqueada = false
+global.fase32_desbloqueada = true
 
 // Controle de conclusão
 global.fase1_concluida = false
@@ -85,7 +85,7 @@ global.fase30_concluida = false
 global.fase31_concluida = false
 global.fase32_concluida = false
 
-global.niveis_completos = 0
+global.niveis_completos = 32
 
 global.desafio1_concluido = false
 global.desafio2_concluido = false

@@ -1,4 +1,4 @@
-if global.niveis_completos == 32 {
+if global.niveis_completos >= 32 {
 	with OTransicao {
 		indo = true
 		proxima_sala = TelaDesafio
