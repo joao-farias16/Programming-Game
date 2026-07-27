@@ -24,6 +24,10 @@ if (instance_exists(SAreaResposta_NV10) && instance_exists(SAreaResposta2NV10)) 
             
             SAreaResposta_NV10.estado_atual = ESTADO_FASE.ACERTO
             SAreaResposta2NV10.estado_atual = ESTADO_FASE.ACERTO
+			
+			scr_pontos_confirmar_acerto(SAreaResposta_NV10, "_a");
+			scr_pontos_confirmar_acerto(SAreaResposta2NV10, "_b");
+
             
         } 
         else {
@@ -31,6 +35,9 @@ if (instance_exists(SAreaResposta_NV10) && instance_exists(SAreaResposta2NV10)) 
             // Resposta incorreta
             SAreaResposta_NV10.estado_atual = ESTADO_FASE.ERRO
             SAreaResposta2NV10.estado_atual = ESTADO_FASE.ERRO
+			
+			scr_pontos_errar(SAreaResposta_NV3, 100);
+			scr_pontos_errar(SAreaResposta2NV10, 100);
             
             // Faz a imagem voltar para o estado neutro
             if (instance_exists(Neutro)) {

@@ -22,12 +22,14 @@ if (instance_exists(SAreaResposta)) {
         if (string_lower(comando) == "print") {
             
             SAreaResposta.estado_atual = ESTADO_FASE.ACERTO
+			scr_pontos_confirmar_acerto(SAreaResposta, "");
             
         } 
         else {
             
             // Resposta incorreta
             SAreaResposta.estado_atual = ESTADO_FASE.ERRO
+			scr_pontos_errar(SAreaResposta, 125);
             
             // Faz a imagem voltar para o estado neutro
             if (instance_exists(Neutro)) {

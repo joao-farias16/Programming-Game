@@ -15,3 +15,5 @@ texto_resultado = "Aguardando código...";
 texto_conceito = "";
 
 max_caracteres_linha = 5;
+
+scr_pontos_iniciar(3000);

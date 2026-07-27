@@ -22,12 +22,17 @@ if (instance_exists(OAreaRespostaNivel2)) {
         if (string_lower(comando) == "print(\"ola mundo\")") {
             
             OAreaRespostaNivel2.estado_atual = ESTADO_FASE.ACERTO
+			
+			scr_pontos_confirmar_acerto(OAreaRespostaNivel2, "");
+
             
         } 
         else {
             
             // Resposta incorreta
             OAreaRespostaNivel2.estado_atual = ESTADO_FASE.ERRO
+			
+			scr_pontos_errar(OAreaRespostaNivel2, 125);
             
             // Faz a imagem voltar para o estado neutro
             if (instance_exists(Neutro)) {

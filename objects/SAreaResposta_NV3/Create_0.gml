@@ -14,3 +14,5 @@ if (instance_exists(SBotaoConfirmar_NV3)) {
 }
 
 max_caracteres_linha = 1;
+
+scr_pontos_iniciar(3000);

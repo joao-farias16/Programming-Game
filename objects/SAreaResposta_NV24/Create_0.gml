@@ -9,3 +9,5 @@ texto_conceito = "";
 posicao_cursor = 0; // posição do cursor no texto
 
 max_caracteres_linha = 5;
+
+scr_pontos_iniciar(3000);

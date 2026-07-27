@@ -56,8 +56,12 @@ if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
             }
         } else if (string_lower(comando) == "print") {
             estado_atual = ESTADO_FASE.ACERTO;
+			scr_pontos_confirmar_acerto(SAreaResposta, "");
+
         } else {
             estado_atual = ESTADO_FASE.ERRO;
+			scr_pontos_errar(SAreaResposta, 125);
+			
             if (instance_exists(Neutro)) {
                 Neutro.alarm[0] = 1 * game_get_speed(gamespeed_fps);
             }

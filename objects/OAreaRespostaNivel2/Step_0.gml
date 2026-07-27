@@ -60,8 +60,11 @@ if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
             }
         } else if (comando == "print(\"ola mundo\")" || comando == "print('ola mundo')") {
             estado_atual = ESTADO_FASE.ACERTO;
+			scr_pontos_confirmar_acerto(OAreaRespostaNivel2, "");
+
         } else {
             estado_atual = ESTADO_FASE.ERRO;
+			scr_pontos_errar(OAreaRespostaNivel2, 125);
             if (instance_exists(Neutro)) {
                 Neutro.alarm[0] = 1 * game_get_speed(gamespeed_fps);
             }

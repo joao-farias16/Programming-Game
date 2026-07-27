@@ -95,3 +95,5 @@ global.desafio5_concluido = false
 global.desafio6_concluido = false
 global.desafio7_concluido = false
 global.desafio8_concluido = false
+
+global.pontos_fases = 0

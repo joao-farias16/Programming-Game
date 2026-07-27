@@ -25,12 +25,17 @@ if (instance_exists(SAreaResposta_NV27)) {
         if (comando == resposta_1) {
             
             SAreaResposta_NV27.estado_atual = ESTADO_FASE.ACERTO;
+			
+			scr_pontos_confirmar_acerto(SAreaResposta_NV27, "");
+
             
         } 
         else {
             
             // Resposta incorreta
             SAreaResposta_NV27.estado_atual = ESTADO_FASE.ERRO;
+			
+			scr_pontos_errar(SAreaResposta_NV27, 125);
             
             // Faz a imagem voltar para o estado neutro
             if (instance_exists(Neutro)) {

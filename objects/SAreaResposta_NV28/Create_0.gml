@@ -15,3 +15,5 @@ if (instance_exists(SBotaoConfirmar_NV28)) {
 
 max_caracteres_linha = 46; // quantidade máxima por linha
 max_linhas = 2;            // quantidade máxima de linhas
+
+scr_pontos_iniciar(3000);
