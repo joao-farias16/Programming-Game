@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_calcular_pontuacao_total",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_calcular_pontuacao_total",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -7,6 +7,9 @@ if (instance_exists(SAreaResposta)) {
 		global.fase2_desbloqueada = true
 		global.niveis_completos++
 		
+		ds_map_set(global.pontos_fases, "fase1", SAreaResposta.pontuacao_fase_atual);
+
+		
 		with OTransicao {
 			indo = true
 			proxima_sala = Nivel2
@@ -22,12 +25,18 @@ if (instance_exists(SAreaResposta)) {
         if (string_lower(comando) == "print") {
             
             SAreaResposta.estado_atual = ESTADO_FASE.ACERTO
+			
+			show_debug_message("Pontuação da fase 1: " + string(SAreaResposta.pontuacao_fase_atual));
+			show_debug_message("Pontuação total: " + string(scr_calcular_pontuacao_total()));
             
         } 
         else {
             
             // Resposta incorreta
             SAreaResposta.estado_atual = ESTADO_FASE.ERRO
+			
+			SAreaResposta.pontuacao_fase_atual = max(0, SAreaResposta.pontuacao_fase_atual - 500);
+
             
             // Faz a imagem voltar para o estado neutro
             if (instance_exists(Neutro)) {

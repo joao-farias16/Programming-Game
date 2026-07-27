@@ -95,3 +95,10 @@ global.desafio5_concluido = false
 global.desafio6_concluido = false
 global.desafio7_concluido = false
 global.desafio8_concluido = false
+
+
+if (!variable_global_exists("pontos_fases")) {
+    global.pontos_fases = ds_map_create();
+    // Aqui não precisa inicializar cada fase --
+    // vamos tratar fase "sem pontuação ainda" como 0 no cálculo do total
+}

@@ -60,8 +60,12 @@ if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
             }
         } else if (comando == "print(\"ola mundo\")" || comando == "print('ola mundo')") {
             estado_atual = ESTADO_FASE.ACERTO;
+			ds_map_set(global.pontos_fases, "fase2", OAreaRespostaNivel2.pontuacao_fase_atual);
+			show_debug_message("Pontuação da fase 2: " + string(OAreaRespostaNivel2.pontuacao_fase_atual));
+			show_debug_message("Pontuação total: " + string(scr_calcular_pontuacao_total()));
         } else {
             estado_atual = ESTADO_FASE.ERRO;
+			OAreaRespostaNivel2.pontuacao_fase_atual = max(0, OAreaRespostaNivel2.pontuacao_fase_atual - 500);
             if (instance_exists(Neutro)) {
                 Neutro.alarm[0] = 1 * game_get_speed(gamespeed_fps);
             }

@@ -56,8 +56,12 @@ if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
             }
         } else if (string_lower(comando) == "print") {
             estado_atual = ESTADO_FASE.ACERTO;
+			ds_map_set(global.pontos_fases, "fase1", SAreaResposta.pontuacao_fase_atual);
+			show_debug_message("Pontuação da fase 1: " + string(SAreaResposta.pontuacao_fase_atual));
+			show_debug_message("Pontuação total: " + string(scr_calcular_pontuacao_total()));
         } else {
             estado_atual = ESTADO_FASE.ERRO;
+			SAreaResposta.pontuacao_fase_atual = max(0, SAreaResposta.pontuacao_fase_atual - 500);
             if (instance_exists(Neutro)) {
                 Neutro.alarm[0] = 1 * game_get_speed(gamespeed_fps);
             }
