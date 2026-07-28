@@ -16,13 +16,16 @@ if (instance_exists(SAreaResposta_NV26)) {
     // Se ainda está testando o código:
     else {
         
-        var comando = scr_normalizar_codigo(SAreaResposta_NV26.texto_digitado);
+		var codigo_original = SAreaResposta_NV26.texto_digitado;
+		var comando = scr_normalizar_codigo(codigo_original);
         
         // Respostas aceitas (variações válidas do código corrigido)
         var resposta_1 = scr_normalizar_codigo("if true:\nprint(\"ola\")");
+		
+		var tem_indentacao = string_pos("\n    print", string_lower(codigo_original)) > 0;
         
         // Resposta correta
-        if (comando == resposta_1) {
+        if (comando == resposta_1 && tem_indentacao) {
             
             SAreaResposta_NV26.estado_atual = ESTADO_FASE.ACERTO;
 			
