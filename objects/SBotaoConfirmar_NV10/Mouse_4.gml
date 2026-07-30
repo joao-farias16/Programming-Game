@@ -36,8 +36,46 @@ if (instance_exists(SAreaResposta_NV10) && instance_exists(SAreaResposta2NV10)) 
             SAreaResposta_NV10.estado_atual = ESTADO_FASE.ERRO
             SAreaResposta2NV10.estado_atual = ESTADO_FASE.ERRO
 			
-			scr_pontos_errar(SAreaResposta_NV3, 100);
-			scr_pontos_errar(SAreaResposta2NV10, 100);
+			scr_pontos_errar(SAreaResposta_NV10, 50);
+			scr_pontos_errar(SAreaResposta2NV10, 50);
+			
+			with (LampadaNivel10)
+			{
+				contador_erros++;
+
+				if (contador_erros >= 2 && nivel_dica < 1)
+				{
+					nivel_dica = 1;
+
+					alpha_dica1 = 0;
+					offset_dica1 = 10;
+					
+					scr_pontos_errar(SAreaResposta_NV10, 100);
+					scr_pontos_errar(SAreaResposta2NV10, 100);
+				}
+
+				else if (contador_erros >= 4 && nivel_dica < 2)
+				{
+					nivel_dica = 2;
+
+					alpha_dica2 = 0;
+					offset_dica2 = 10;
+					
+					scr_pontos_errar(SAreaResposta_NV10, 150);
+					scr_pontos_errar(SAreaResposta2NV10, 150);
+				}
+
+				else if (contador_erros >= 6 && nivel_dica < 3)
+				{
+					nivel_dica = 3;
+
+					alpha_dica3 = 0;
+					offset_dica3 = 10;
+					
+					scr_pontos_errar(SAreaResposta_NV10, 200);
+					scr_pontos_errar(SAreaResposta2NV10, 200);
+				}
+			}
             
             // Faz a imagem voltar para o estado neutro
             if (instance_exists(Neutro)) {

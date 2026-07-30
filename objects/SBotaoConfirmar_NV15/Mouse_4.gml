@@ -32,7 +32,42 @@ if (instance_exists(SAreaResposta_NV15)) {
             // Resposta incorreta
             SAreaResposta_NV15.estado_atual = ESTADO_FASE.ERRO
 			
-			scr_pontos_errar(SAreaResposta_NV15, 125);
+			scr_pontos_errar(SAreaResposta_NV15, 100);
+			
+			with (LampadaNivel15)
+			{
+				contador_erros++;
+
+				if (contador_erros >= 2 && nivel_dica < 1)
+				{
+					nivel_dica = 1;
+
+					alpha_dica1 = 0;
+					offset_dica1 = 10;
+					
+					scr_pontos_errar(SAreaResposta_NV15, 200);
+				}
+
+				else if (contador_erros >= 4 && nivel_dica < 2)
+				{
+					nivel_dica = 2;
+
+					alpha_dica2 = 0;
+					offset_dica2 = 10;
+					
+					scr_pontos_errar(SAreaResposta_NV15, 300);
+				}
+
+				else if (contador_erros >= 6 && nivel_dica < 3)
+				{
+					nivel_dica = 3;
+
+					alpha_dica3 = 0;
+					offset_dica3 = 10;
+					
+					scr_pontos_errar(SAreaResposta_NV15, 400);
+				}
+			}
             
             // Faz a imagem voltar para o estado neutro
             if (instance_exists(Neutro)) {

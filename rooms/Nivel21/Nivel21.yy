@@ -10,6 +10,7 @@
     {"name":"inst_55D616C6","path":"rooms/Nivel21/Nivel21.yy",},
     {"name":"inst_66852FF5","path":"rooms/Nivel21/Nivel21.yy",},
     {"name":"inst_52C2EAD0","path":"rooms/Nivel21/Nivel21.yy",},
+    {"name":"inst_11329E19","path":"rooms/Nivel21/Nivel21.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -18,6 +19,7 @@
         {"$GMRInstance":"v4","%Name":"inst_55D616C6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55D616C6","objectId":{"name":"SAreaResposta_NV21","path":"objects/SAreaResposta_NV21/SAreaResposta_NV21.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":661.0,"y":440.0,},
         {"$GMRInstance":"v4","%Name":"inst_66852FF5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66852FF5","objectId":{"name":"SBotaoConfirmar_NV21","path":"objects/SBotaoConfirmar_NV21/SBotaoConfirmar_NV21.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":521.0,},
         {"$GMRInstance":"v4","%Name":"inst_52C2EAD0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_52C2EAD0","objectId":{"name":"Imagens_NV21","path":"objects/Imagens_NV21/Imagens_NV21.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":641.0,"y":179.0,},
+        {"$GMRInstance":"v4","%Name":"inst_11329E19","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_11329E19","objectId":{"name":"LampadaNivel21","path":"objects/LampadaNivel21/LampadaNivel21.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":925.0,"y":581.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"TelaFundo_NV21","path":"sprites/TelaFundo_NV21/TelaFundo_NV21.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

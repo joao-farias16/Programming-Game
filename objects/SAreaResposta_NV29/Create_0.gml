@@ -13,7 +13,7 @@ if (instance_exists(SBotaoConfirmar_NV29)) {
     SBotaoConfirmar_NV29.area_resposta_id = id;
 }
 
-max_caracteres_linha = 90; // quantidade máxima por linha
+max_caracteres_linha = 64; // quantidade máxima por linha
 max_linhas = 5;            // quantidade máxima de linhas
 
 scr_pontos_iniciar(3000);
