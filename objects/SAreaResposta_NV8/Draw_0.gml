@@ -16,3 +16,11 @@ if (clicado && (current_time mod 1000 < 500) && estado_atual == ESTADO_FASE.AGUA
     var altura = string_height("A");
     draw_line(cursor_x, digitacao_y, cursor_x, digitacao_y + altura);
 }
+
+draw_sprite(Pontuacao, 0, 1660, 29);
+
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+draw_set_color(c_white);
+
+draw_text(1750, 25, string(pontuacao_fase_atual) + " / 3000");

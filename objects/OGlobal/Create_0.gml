@@ -19,37 +19,37 @@ window_center()
 
 // Controle de desbloqueio
 global.fase1_desbloqueada = true
-global.fase2_desbloqueada = false
-global.fase3_desbloqueada = false
-global.fase4_desbloqueada = false
-global.fase5_desbloqueada = false
-global.fase6_desbloqueada = false
-global.fase7_desbloqueada = false
-global.fase8_desbloqueada = false
-global.fase9_desbloqueada = false
-global.fase10_desbloqueada = false
-global.fase11_desbloqueada = false
-global.fase12_desbloqueada = false
-global.fase13_desbloqueada = false
-global.fase14_desbloqueada = false
-global.fase15_desbloqueada = false
-global.fase16_desbloqueada = false
-global.fase17_desbloqueada = false
-global.fase18_desbloqueada = false
-global.fase19_desbloqueada = false
-global.fase20_desbloqueada = false
-global.fase21_desbloqueada = false
-global.fase22_desbloqueada = false
-global.fase23_desbloqueada = false
-global.fase24_desbloqueada = false
-global.fase25_desbloqueada = false
-global.fase26_desbloqueada = false
-global.fase27_desbloqueada = false
-global.fase28_desbloqueada = false
-global.fase29_desbloqueada = false
-global.fase30_desbloqueada = false
-global.fase31_desbloqueada = false
-global.fase32_desbloqueada = false
+global.fase2_desbloqueada = true
+global.fase3_desbloqueada = true
+global.fase4_desbloqueada = true
+global.fase5_desbloqueada = true
+global.fase6_desbloqueada = true
+global.fase7_desbloqueada = true
+global.fase8_desbloqueada = true
+global.fase9_desbloqueada = true
+global.fase10_desbloqueada = true
+global.fase11_desbloqueada = true
+global.fase12_desbloqueada = true
+global.fase13_desbloqueada = true
+global.fase14_desbloqueada = true
+global.fase15_desbloqueada = true
+global.fase16_desbloqueada = true
+global.fase17_desbloqueada = true
+global.fase18_desbloqueada = true
+global.fase19_desbloqueada = true
+global.fase20_desbloqueada = true
+global.fase21_desbloqueada = true
+global.fase22_desbloqueada = true
+global.fase23_desbloqueada = true
+global.fase24_desbloqueada = true
+global.fase25_desbloqueada = true
+global.fase26_desbloqueada = true
+global.fase27_desbloqueada = true
+global.fase28_desbloqueada = true
+global.fase29_desbloqueada = true
+global.fase30_desbloqueada = true
+global.fase31_desbloqueada = true
+global.fase32_desbloqueada = true
 
 // Controle de conclusão
 global.fase1_concluida = false
@@ -85,7 +85,7 @@ global.fase30_concluida = false
 global.fase31_concluida = false
 global.fase32_concluida = false
 
-global.niveis_completos = 0
+global.niveis_completos = 32
 
 global.desafio1_concluido = false
 global.desafio2_concluido = false

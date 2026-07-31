@@ -24,3 +24,13 @@ if (instance_exists(AreaResposta) && AreaResposta.estado_atual == ESTADO_FASE.AC
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 */
+
+draw_sprite(Pontuacao, 0, 1660, 29);
+
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+draw_set_color(c_white);
+
+var pontuacao_total = SAreaResposta_NV30.pontuacao_fase_atual + SAreaResposta2NV30.pontuacao_fase_atual;
+
+draw_text(1750, 25, string(pontuacao_total) + " / 3000");
