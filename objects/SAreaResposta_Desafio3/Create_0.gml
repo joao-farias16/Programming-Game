@@ -13,5 +13,7 @@ if (instance_exists(SBotaoConfirmar_Desafio3)) {
     SBotaoConfirmar_Desafio3.area_resposta_id = id;
 }
 
-max_caracteres_linha = 40; // quantidade máxima por linha
+max_caracteres_linha = 64; // quantidade máxima por linha
 max_linhas = 7;            // quantidade máxima de linhas
+
+scr_pontos_iniciar(3000);

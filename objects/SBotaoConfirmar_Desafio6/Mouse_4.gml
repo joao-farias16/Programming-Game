@@ -24,12 +24,51 @@ if (instance_exists(SAreaResposta_Desafio6)) {
         if (comando == resposta_1) {
             
             SAreaResposta_Desafio6.estado_atual = ESTADO_FASE.ACERTO;
+			
+			scr_pontos_confirmar_acerto(SAreaResposta_Desafio5, "");
             
         } 
         else {
             
             // Resposta incorreta
             SAreaResposta_Desafio6.estado_atual = ESTADO_FASE.ERRO;
+			
+			scr_pontos_errar(SAreaResposta_Desafio6, 100);
+			
+			with (LampadaDesafio6)
+			{
+				contador_erros++;
+
+				if (contador_erros >= 2 && nivel_dica < 1)
+				{
+					nivel_dica = 1;
+
+					alpha_dica1 = 0;
+					offset_dica1 = 10;
+					
+					scr_pontos_errar(SAreaResposta_Desafio6, 200);
+				}
+
+				else if (contador_erros >= 4 && nivel_dica < 2)
+				{
+					nivel_dica = 2;
+
+					alpha_dica2 = 0;
+					offset_dica2 = 10;
+					
+					scr_pontos_errar(SAreaResposta_Desafio6, 300);
+				}
+
+				else if (contador_erros >= 6 && nivel_dica < 3)
+				{
+					nivel_dica = 3;
+
+					alpha_dica3 = 0;
+					offset_dica3 = 10;
+					
+					scr_pontos_errar(SAreaResposta_Desafio6, 400);
+				}
+			}
             
             // Faz a imagem voltar para o estado neutro
             if (instance_exists(Neutro)) {
