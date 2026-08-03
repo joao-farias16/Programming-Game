@@ -5,6 +5,8 @@ if (instance_exists(SAreaResposta_Desafio4)) {
     if (SAreaResposta_Desafio4.estado_atual == ESTADO_FASE.ACERTO) {
         global.desafio4_concluido = true;
 		global.niveis_completos++
+		
+		scr_salvar_jogo();
         
         with (OTransicao) {
             indo = true;

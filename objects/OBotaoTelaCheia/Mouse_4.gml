@@ -17,3 +17,5 @@ if !global.fullscreen {
 	window_set_size(final_w, final_h)
 	window_center()
 }
+
+scr_salvar_jogo();

@@ -6,6 +6,8 @@ if (instance_exists(SAreaResposta_NV28)) {
         global.fase28_concluida = true;
         global.fase29_desbloqueada = true;
 		global.niveis_completos++
+		
+		scr_salvar_jogo();
         
         with (OTransicao) {
             indo = true;

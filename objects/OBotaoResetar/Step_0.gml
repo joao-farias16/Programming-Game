@@ -98,6 +98,28 @@ if (mouse_check_button_pressed(mb_left)) {
 		global.fase32_concluida = false
 		
 		global.niveis_completos = 0
+		
+		// Reseta os desafios
+		global.desafio1_concluido = false;
+		global.desafio2_concluido = false;
+		global.desafio3_concluido = false;
+		global.desafio4_concluido = false;
+		global.desafio5_concluido = false;
+		global.desafio6_concluido = false;
+		global.desafio7_concluido = false;
+		global.desafio8_concluido = false;
+
+		// Limpa as pontuações
+		if (variable_global_exists("pontos_fases"))
+		{
+		    if (ds_exists(global.pontos_fases, ds_type_map))
+		    {
+		        ds_map_clear(global.pontos_fases);
+		    }
+		}
+
+		// Salva o progresso resetado
+		scr_salvar_jogo();
     }
 }
 

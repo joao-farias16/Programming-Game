@@ -6,3 +6,5 @@ if global.som_ativo {
 else {
 	audio_master_gain(0)
 }
+
+scr_salvar_jogo();

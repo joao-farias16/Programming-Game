@@ -7,6 +7,8 @@ if (instance_exists(SAreaResposta_NV30) && instance_exists(SAreaResposta2NV30)) 
 		global.fase31_desbloqueada = true
 		global.niveis_completos++
 		
+		scr_salvar_jogo();
+		
 		with OTransicao {
 			indo = true
 			proxima_sala = Nivel31

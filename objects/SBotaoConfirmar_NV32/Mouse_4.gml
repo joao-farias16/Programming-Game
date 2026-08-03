@@ -5,6 +5,8 @@ if (instance_exists(SAreaResposta_NV32)) {
     if (SAreaResposta_NV32.estado_atual == ESTADO_FASE.ACERTO) {
         global.fase32_concluida = true;
 		global.niveis_completos++
+		
+		scr_salvar_jogo();
         
         with (OTransicao) {
             indo = true;

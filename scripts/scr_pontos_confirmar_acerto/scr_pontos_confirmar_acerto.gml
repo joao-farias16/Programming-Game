@@ -11,4 +11,7 @@ function scr_pontos_confirmar_acerto(_area_resposta, _sufixo) {
     
     show_debug_message("Pontuação da " + _nome_chave + ": " + string(_area_resposta.pontuacao_fase_atual));
     show_debug_message("Pontuação total: " + string(scr_calcular_pontuacao_total()));
+	
+	scr_salvar_jogo();
 }
+

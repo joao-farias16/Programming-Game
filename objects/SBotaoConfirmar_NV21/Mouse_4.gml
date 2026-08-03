@@ -7,6 +7,8 @@ if (instance_exists(SAreaResposta_NV21)) {
 		global.fase22_desbloqueada = true
 		global.niveis_completos++
 		
+		scr_salvar_jogo();
+		
 		with OTransicao {
 			indo = true
 			proxima_sala = Nivel22

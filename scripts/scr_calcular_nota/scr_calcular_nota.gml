@@ -2,12 +2,12 @@
 
 function scr_calcular_nota()
 {
-    if (!variable_global_exists("pontos_fases") || !ds_exists(global.pontos_fases, ds_type_map))
+	if (!variable_global_exists("pontos_fases") || !ds_exists(global.pontos_fases, ds_type_map))
         return 0;
 
     var pontuacao_total = scr_calcular_pontuacao_total();
 
-    var fases_concluidas = ds_map_size(global.pontos_fases);
+    var fases_concluidas = global.niveis_completos;
 
     if (fases_concluidas <= 0)
         return 0;
