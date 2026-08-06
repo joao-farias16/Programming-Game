@@ -70,7 +70,7 @@ else if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
 
         } else {
             estado_atual = ESTADO_FASE.ERRO;
-			scr_pontos_errar(SAreaResposta_NV13, 125);
+			scr_pontos_errar(SAreaResposta_NV13, 100);
             if (instance_exists(Neutro)) {
                 Neutro.alarm[0] = 1 * game_get_speed(gamespeed_fps);
             }
