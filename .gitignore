@@ -60,3 +60,10 @@ Temporary Items
 
 # GMRT build directory
 Build
+
+options/android/
+options/html5/
+options/ios/
+options/linux/
+options/mac/
+options/tvos/
