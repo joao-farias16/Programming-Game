@@ -65,6 +65,42 @@ if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
         } else {
             estado_atual = ESTADO_FASE.ERRO;
 			scr_pontos_errar(OAreaRespostaNivel2, 100);
+			
+			with (LampadaNivel2)
+			{
+				contador_erros++;
+
+				if (contador_erros >= 2 && nivel_dica < 1)
+				{
+					nivel_dica = 1;
+
+					alpha_dica1 = 0;
+					offset_dica1 = 10;
+					
+					scr_pontos_errar(OAreaRespostaNivel2, 200);
+				}
+
+				else if (contador_erros >= 4 && nivel_dica < 2)
+				{
+					nivel_dica = 2;
+
+					alpha_dica2 = 0;
+					offset_dica2 = 10;
+					
+					scr_pontos_errar(OAreaRespostaNivel2, 300);
+				}
+
+				else if (contador_erros >= 6 && nivel_dica < 3)
+				{
+					nivel_dica = 3;
+
+					alpha_dica3 = 0;
+					offset_dica3 = 10;
+					
+					scr_pontos_errar(OAreaRespostaNivel2, 400);
+				}
+			}
+			
             if (instance_exists(Neutro)) {
                 Neutro.alarm[0] = 1 * game_get_speed(gamespeed_fps);
             }
