@@ -54,72 +54,90 @@ if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
             keyboard_string = texto_digitado;
         }
     }
-    
-    // Enter confirma
-   if (keyboard_check_pressed(vk_return)) {
+}
+
+// Enter confirma
+if (clicado && keyboard_check_pressed(vk_return)) {
     keyboard_clear(vk_return);
-    
-    var comando = string_trim(texto_digitado);
-    show_debug_message("Comando: " + comando);
-    
-    if (estado_atual == ESTADO_FASE.ACERTO) {
-        global.fase30_concluida = true;
-        if (instance_exists(OTransicao)) {
+
+    if (instance_exists(SAreaResposta_NV30) && instance_exists(SAreaResposta2NV30)) {
+
+        // Se as duas respostas já estão corretas,
+        // avança para a próxima fase
+        if (SAreaResposta_NV30.estado_atual == ESTADO_FASE.ACERTO &&
+            SAreaResposta2NV30.estado_atual == ESTADO_FASE.ACERTO) {
+
+            global.fase30_concluida = true;
+            global.fase31_desbloqueada = true;
+            global.niveis_completos++;
+
+            scr_salvar_jogo();
+
             with (OTransicao) {
                 indo = true;
                 proxima_sala = Nivel31;
             }
         }
-    } else if (string_lower(comando) == "and") {
-        estado_atual = ESTADO_FASE.ACERTO;
-		scr_pontos_confirmar_acerto(SAreaResposta_NV30, "_a");
+        else {
 
-    } else {
-        estado_atual = ESTADO_FASE.ERRO;
-		scr_pontos_errar(SAreaResposta_NV30, 100);
-		
-		with (LampadaNivel30)
-			{
-				contador_erros++;
+            var comando1 = string_trim(SAreaResposta_NV30.texto_digitado);
+            var comando2 = string_trim(SAreaResposta2NV30.texto_digitado);
 
-				if (contador_erros >= 2 && nivel_dica < 1)
-				{
-					nivel_dica = 1;
+            // Resposta correta
+            if (string_lower(comando1) == "and" &&
+                string_lower(comando2) == "%") {
 
-					alpha_dica1 = 0;
-					offset_dica1 = 10;
-					
-					scr_pontos_errar(SAreaResposta_NV30, 100);
-					scr_pontos_errar(SAreaResposta2NV30, 100);
-				}
+                SAreaResposta_NV30.estado_atual = ESTADO_FASE.ACERTO;
+                SAreaResposta2NV30.estado_atual = ESTADO_FASE.ACERTO;
 
-				else if (contador_erros >= 4 && nivel_dica < 2)
-				{
-					nivel_dica = 2;
+                scr_pontos_confirmar_acerto(SAreaResposta_NV30, "_a");
+                scr_pontos_confirmar_acerto(SAreaResposta2NV30, "_b");
+            }
+            else {
 
-					alpha_dica2 = 0;
-					offset_dica2 = 10;
-					
-					scr_pontos_errar(SAreaResposta_NV30, 150);
-					scr_pontos_errar(SAreaResposta2NV30, 150);
-				}
+                // Resposta incorreta
+                SAreaResposta_NV30.estado_atual = ESTADO_FASE.ERRO;
+                SAreaResposta2NV30.estado_atual = ESTADO_FASE.ERRO;
 
-				else if (contador_erros >= 6 && nivel_dica < 3)
-				{
-					nivel_dica = 3;
+                scr_pontos_errar(SAreaResposta_NV30, 50);
+                scr_pontos_errar(SAreaResposta2NV30, 50);
 
-					alpha_dica3 = 0;
-					offset_dica3 = 10;
-					
-					scr_pontos_errar(SAreaResposta_NV30, 200);
-					scr_pontos_errar(SAreaResposta2NV30, 200);
-				}
-			}
-		
-        if (instance_exists(Neutro)) {
-            Neutro.alarm[0] = 1 * game_get_speed(gamespeed_fps);
+                with (LampadaNivel30) {
+                    contador_erros++;
+
+                    if (contador_erros >= 2 && nivel_dica < 1) {
+                        nivel_dica = 1;
+                        alpha_dica1 = 0;
+                        offset_dica1 = 10;
+
+                        scr_pontos_errar(SAreaResposta_NV30, 100);
+                        scr_pontos_errar(SAreaResposta2NV30, 100);
+                    }
+                    else if (contador_erros >= 4 && nivel_dica < 2) {
+                        nivel_dica = 2;
+                        alpha_dica2 = 0;
+                        offset_dica2 = 10;
+
+                        scr_pontos_errar(SAreaResposta_NV30, 150);
+                        scr_pontos_errar(SAreaResposta2NV30, 150);
+                    }
+                    else if (contador_erros >= 6 && nivel_dica < 3) {
+                        nivel_dica = 3;
+                        alpha_dica3 = 0;
+                        offset_dica3 = 10;
+
+                        scr_pontos_errar(SAreaResposta_NV30, 200);
+                        scr_pontos_errar(SAreaResposta2NV30, 200);
+                    }
+                }
+
+                if (instance_exists(Neutro)) {
+                    Neutro.alarm[0] = 1 * game_get_speed(gamespeed_fps);
+                }
+
+                SAreaResposta_NV30.alarm[0] = 1 * game_get_speed(gamespeed_fps);
+                SAreaResposta2NV30.alarm[0] = 1 * game_get_speed(gamespeed_fps);
+            }
         }
-        alarm[0] = 1 * game_get_speed(gamespeed_fps);
     }
-}
 }
