@@ -1,7 +1,5 @@
-global.volume = 1
+global.volume = 1;
 
-if global.som_ativo {
-	audio_master_gain(global.volume)
-}
+aplicar_volume();
 
 scr_salvar_jogo();

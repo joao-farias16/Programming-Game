@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Lofi",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":3600.039,
+  "exportDir":"",
+  "name":"Lofi",
+  "parent":{
+    "name":"Audios",
+    "path":"folders/Audios.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Lofi.MP3",
+  "volume":1.0,
+}

@@ -98,4 +98,13 @@ global.desafio8_concluido = false
 
 global.pontos_fases = 0
 
+
+global.volume_sfx = 0.5;
+
 scr_carregar_jogo();
+
+global.musica = audio_play_sound(Lofi, 1, true);
+audio_sound_gain(global.musica, global.volume, 0);
+
+
+audio_master_gain(1);

@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"confirmation_002",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.53900224,
+  "exportDir":"",
+  "name":"confirmation_002",
+  "parent":{
+    "name":"Audios",
+    "path":"folders/Audios.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"confirmation_002.ogg",
+  "volume":1.0,
+}

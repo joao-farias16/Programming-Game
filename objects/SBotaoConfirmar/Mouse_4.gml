@@ -22,7 +22,7 @@ if (instance_exists(SAreaResposta)) {
         
         // Resposta correta
         if (string_lower(comando) == "print") {
-            
+            tocar_resposta(true);
             SAreaResposta.estado_atual = ESTADO_FASE.ACERTO
 			scr_pontos_confirmar_acerto(SAreaResposta, "");
             
@@ -30,6 +30,7 @@ if (instance_exists(SAreaResposta)) {
         else {
             
             // Resposta incorreta
+			tocar_resposta(false);
             SAreaResposta.estado_atual = ESTADO_FASE.ERRO
 			scr_pontos_errar(SAreaResposta, 100);
             

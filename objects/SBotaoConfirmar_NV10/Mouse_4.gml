@@ -24,6 +24,7 @@ if (instance_exists(SAreaResposta_NV10) && instance_exists(SAreaResposta2NV10)) 
         // Resposta correta
         if (string_lower(comando1) == "+" && string_lower(comando2) == "+") {
             
+			tocar_resposta(true);
             SAreaResposta_NV10.estado_atual = ESTADO_FASE.ACERTO
             SAreaResposta2NV10.estado_atual = ESTADO_FASE.ACERTO
 			
@@ -35,6 +36,7 @@ if (instance_exists(SAreaResposta_NV10) && instance_exists(SAreaResposta2NV10)) 
         else {
             
             // Resposta incorreta
+			tocar_resposta(false);
             SAreaResposta_NV10.estado_atual = ESTADO_FASE.ERRO
             SAreaResposta2NV10.estado_atual = ESTADO_FASE.ERRO
 			

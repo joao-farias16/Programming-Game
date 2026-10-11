@@ -26,7 +26,7 @@ if (instance_exists(SAreaResposta_NV11)) {
         
         // Resposta correta
         if (comando == resposta_1 || comando == resposta_2) {
-            
+            tocar_resposta(true);
             SAreaResposta_NV11.estado_atual = ESTADO_FASE.ACERTO;
 			
 			scr_pontos_confirmar_acerto(SAreaResposta_NV11, "");
@@ -36,6 +36,7 @@ if (instance_exists(SAreaResposta_NV11)) {
         else {
             
             // Resposta incorreta
+			tocar_resposta(false);
             SAreaResposta_NV11.estado_atual = ESTADO_FASE.ERRO;
 			
 			scr_pontos_errar(SAreaResposta_NV11, 100);

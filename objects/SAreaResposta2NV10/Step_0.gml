@@ -87,6 +87,7 @@ if (clicado && keyboard_check_pressed(vk_return)) {
             if (string_lower(comando1) == "+" &&
                 string_lower(comando2) == "+") {
 
+				tocar_resposta(true);
                 SAreaResposta_NV10.estado_atual = ESTADO_FASE.ACERTO;
                 SAreaResposta2NV10.estado_atual = ESTADO_FASE.ACERTO;
 
@@ -96,6 +97,7 @@ if (clicado && keyboard_check_pressed(vk_return)) {
             else {
 
                 // Pelo menos uma resposta está errada
+				tocar_resposta(false);
                 SAreaResposta_NV10.estado_atual = ESTADO_FASE.ERRO;
                 SAreaResposta2NV10.estado_atual = ESTADO_FASE.ERRO;
 

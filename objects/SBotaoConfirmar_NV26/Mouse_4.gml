@@ -29,6 +29,7 @@ if (instance_exists(SAreaResposta_NV26)) {
         // Resposta correta
         if (comando == resposta_1 && tem_indentacao) {
             
+			tocar_resposta(true);
             SAreaResposta_NV26.estado_atual = ESTADO_FASE.ACERTO;
 			
 			scr_pontos_confirmar_acerto(SAreaResposta_NV26, "");
@@ -38,6 +39,7 @@ if (instance_exists(SAreaResposta_NV26)) {
         else {
             
             // Resposta incorreta
+			tocar_resposta(false);
             SAreaResposta_NV26.estado_atual = ESTADO_FASE.ERRO;
 			
 			scr_pontos_errar(SAreaResposta_NV26, 100);

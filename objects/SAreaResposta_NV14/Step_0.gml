@@ -66,10 +66,12 @@ else if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
         
         if (comando == "elif") {
             estado_atual = ESTADO_FASE.ACERTO;
+			tocar_resposta(true);
 			scr_pontos_confirmar_acerto(SAreaResposta_NV14, "");
 
         } else {
             estado_atual = ESTADO_FASE.ERRO;
+			tocar_resposta(false);
 			scr_pontos_errar(SAreaResposta_NV14, 100);
 			
 			with (LampadaNivel14)

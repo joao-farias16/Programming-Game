@@ -56,10 +56,12 @@ if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
             }
         } else if (string_lower(comando) == "print") {
             estado_atual = ESTADO_FASE.ACERTO;
+			tocar_resposta(true);
 			scr_pontos_confirmar_acerto(SAreaResposta, "");
 
         } else {
             estado_atual = ESTADO_FASE.ERRO;
+			tocar_resposta(false);
 			scr_pontos_errar(SAreaResposta, 100);
 			
 			with (LampadaNivel1)

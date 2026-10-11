@@ -23,6 +23,7 @@ if (instance_exists(OAreaRespostaNivel2)) {
         // Resposta correta
         if (string_lower(comando) == "print(\"ola mundo\")") {
             
+			tocar_resposta(true);
             OAreaRespostaNivel2.estado_atual = ESTADO_FASE.ACERTO
 			
 			scr_pontos_confirmar_acerto(OAreaRespostaNivel2, "");
@@ -32,6 +33,7 @@ if (instance_exists(OAreaRespostaNivel2)) {
         else {
             
             // Resposta incorreta
+			tocar_resposta(false);
             OAreaRespostaNivel2.estado_atual = ESTADO_FASE.ERRO
 			
 			scr_pontos_errar(OAreaRespostaNivel2, 100);

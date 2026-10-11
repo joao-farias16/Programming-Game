@@ -59,10 +59,12 @@ if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
                 }
             }
         } else if (comando == "print(\"ola mundo\")" || comando == "print('ola mundo')") {
+			tocar_resposta(true);
             estado_atual = ESTADO_FASE.ACERTO;
 			scr_pontos_confirmar_acerto(OAreaRespostaNivel2, "");
 
         } else {
+			tocar_resposta(false);
             estado_atual = ESTADO_FASE.ERRO;
 			scr_pontos_errar(OAreaRespostaNivel2, 100);
 			

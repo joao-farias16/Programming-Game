@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"back_002",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.09142857,
+  "exportDir":"",
+  "name":"back_002",
+  "parent":{
+    "name":"Audios",
+    "path":"folders/Audios.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"back_002.ogg",
+  "volume":1.0,
+}

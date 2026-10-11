@@ -10,3 +10,5 @@ else {
 		proxima_sala = TelaDesafioBloqueado
 	}
 }
+
+audio_play_sound(drop_001,2,false);

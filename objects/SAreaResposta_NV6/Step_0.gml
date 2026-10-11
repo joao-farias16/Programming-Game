@@ -55,11 +55,13 @@ if (clicado && estado_atual == ESTADO_FASE.AGUARDANDO) {
                 }
             }
         } else if (comando == ">") {
+			tocar_resposta(true);
             estado_atual = ESTADO_FASE.ACERTO;
 			
 			scr_pontos_confirmar_acerto(SAreaResposta_NV6, "");
 
         } else {
+			tocar_resposta(false);
             estado_atual = ESTADO_FASE.ERRO;
 			scr_pontos_errar(SAreaResposta_NV6, 100);
 			

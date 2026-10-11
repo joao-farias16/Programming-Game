@@ -22,7 +22,7 @@ if (instance_exists(SAreaResposta_NV14)) {
         
         // Resposta correta
         if (string_lower(comando) == "elif") {
-            
+            tocar_resposta(true);
             SAreaResposta_NV14.estado_atual = ESTADO_FASE.ACERTO
 			
 			scr_pontos_confirmar_acerto(SAreaResposta_NV14, "");
@@ -32,6 +32,7 @@ if (instance_exists(SAreaResposta_NV14)) {
         else {
             
             // Resposta incorreta
+			tocar_resposta(false);
             SAreaResposta_NV14.estado_atual = ESTADO_FASE.ERRO
 			
 			scr_pontos_errar(SAreaResposta_NV14, 100);
