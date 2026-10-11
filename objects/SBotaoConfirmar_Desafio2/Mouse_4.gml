@@ -20,6 +20,7 @@ if (instance_exists(SAreaResposta_Desafio2)) {
         // Resposta correta
         if (scr_validar_desafio(2, SAreaResposta_Desafio2.texto_digitado)) {
             
+			tocar_resposta(true);
             SAreaResposta_Desafio2.estado_atual = ESTADO_FASE.ACERTO;
 			
 			scr_pontos_confirmar_acerto(SAreaResposta_Desafio2, "");
@@ -28,6 +29,7 @@ if (instance_exists(SAreaResposta_Desafio2)) {
         else {
             
             // Resposta incorreta
+			tocar_resposta(false);
             SAreaResposta_Desafio2.estado_atual = ESTADO_FASE.ERRO;
 			
 			scr_pontos_errar(SAreaResposta_Desafio2, 100);

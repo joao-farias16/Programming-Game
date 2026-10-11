@@ -25,6 +25,7 @@ if (instance_exists(SAreaResposta_Desafio6)) {
         // Resposta correta
         if (comando == resposta_1) {
             
+			tocar_resposta(true);
             SAreaResposta_Desafio6.estado_atual = ESTADO_FASE.ACERTO;
 			
 			scr_pontos_confirmar_acerto(SAreaResposta_Desafio5, "");
@@ -33,6 +34,7 @@ if (instance_exists(SAreaResposta_Desafio6)) {
         else {
             
             // Resposta incorreta
+			tocar_resposta(false);
             SAreaResposta_Desafio6.estado_atual = ESTADO_FASE.ERRO;
 			
 			scr_pontos_errar(SAreaResposta_Desafio6, 100);
